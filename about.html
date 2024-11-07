@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoFuture - About Us</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #E8F5E9 30%, #A5D6A7, #388E3C 90%);
+            color: #333;
+        }
+
+        header {
+            background-color: #3f7e42;
+            padding: 2rem;
+            color: white;
+            display: flex;
+            justify-content: space-between; /* Space between logo and text */
+            align-items: center;
+            gap: 1rem;
+        }
+
+        header .logo {
+            max-width: 100px;
+            border-radius: 10px;
+        }
+
+        .header-text {
+            text-align: center;
+            flex-grow: 1; /* Allow the text to take up the remaining space */
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: white;
+            text-transform: uppercase; /* Make the company name bold and uppercase */
+        }
+
+        .slogan {
+            font-family: 'Georgia', serif;
+            font-size: 1.2rem; /* Smaller font size for the slogan */
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: #fdd835; /* Bright yellow for a strong contrast */
+            text-transform: capitalize;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #4CAF50;
+            padding: 1rem;
+        }
+
+        nav a {
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #66BB6A;
+            border-radius: 5px;
+        }
+
+        .content {
+            padding: 2rem;
+            background-color: rgb(45, 180, 63);
+            color: white;
+            margin: 1rem auto;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 1rem;
+            margin: 1rem auto;
+            justify-content: center;
+        }
+
+        .image-gallery img {
+            width: calc(50% - 1rem); /* Default to half-width for each image */
+            max-width: 180px; /* Limits maximum width */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #388E3C;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 960px) {
+            header {
+                font-size: 2rem;
+            }
+            nav a {
+                margin: 0 0.5rem;
+            }
+            .content {
+                margin: 0.5rem;
+            }
+            .image-gallery img {
+                width: calc(50% - 1rem); /* Two images per row on tablets */
+                max-width: 150px; /* Reduces max width slightly */
+            }
+        }
+
+        @media (max-width: 600px) {
+            .image-gallery img {
+                width: 100%; /* Full width for each image on small screens */
+                max-width: 100%; /* Removes max width for better scaling */
+            }
+        }
+    </style>
+</head>
+<body>
+    
+
+<header>
+    <img src="https://ecofuture-prima.eu/wp-content/uploads/2023/06/Ecofuture-logo-180x180-1.png" alt="EcoFuture Logo" class="logo"/>
+    <div class="header-text">
+        <h1>EcoFuture</h1>
+        <p class="slogan">The EcoFuture of Survival</p> <!-- Added slogan below the company name -->
+    </div>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
+
+<div class="content">
+    <h2>About Us</h2>
+    <p>EcoFuture was set up by a team of industry experts with over 80 years of collective experience in the Renewable, Heating, Insulation & funding sector.</p>
+    <p>The business was established by the partners to deliver excellent customer service & the best possible Renewable Heating solutions for domestic and commercial properties.</p>
+    <p>We recently installed solar panels with battery storage and an air source heat pump to replace our oil heating system.</p>
+    <p>The experience from our first contact with Luke to the final handover with Paul was extremely positive. Everyone we interacted with was helpful, knowledgeable, and professional.</p>
+    <p>The installation teams were confident in their abilities, very skillful, and tidy. We are very pleased with the installations and the apps that allow us to monitor and control our new systems. We strongly recommend EcoFuture—what a great company!</p>
+</div>
+
+<div class="image-gallery">
+    <img src="https://www.nmpropertyservicesltd.co.uk/images/236029639_1459549251076057_4994752989826006400_n.jpeg" alt="Our Team">
+    <img src="https://strategicsolargroup.com/wp-content/uploads/2016/08/Solar-Panel-Installation.jpg" alt="Solar Panels Installation">
+    <img src="https://img.alicdn.com/imgextra/i3/42413908299030811/O1CN01IvMw611HrTyzohIwz_!!42413908299030811-0-tbvideo.jpg" alt="Battery Storage System">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/60cd1a158713491.6391c1018cbf6.jpg" alt="EcoFuture's Office">
+</div>
+
+<footer>
+    <p>EcoFuture &copy; 2024. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

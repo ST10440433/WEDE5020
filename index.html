@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoFuture - Home</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            animation: backgroundMove 10s linear infinite;
+            background: linear-gradient(45deg, #B2E0B2, #A8DAB5, #99D6A7, #88C5A2); /* Soft green gradient */
+            background-size: 400% 400%;
+        }
+
+        @keyframes backgroundMove {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            color: white;
+        }
+
+        .logo {
+            width: 100px; /* Larger logo size */
+            height: 100px; /* Maintain height for consistent proportions */
+        }
+
+        .header-content {
+            text-align: center;
+        }
+
+        .header-content h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .slogan {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #388E3C;
+            padding: 1rem;
+        }
+
+        nav a {
+            margin: 0 1rem;
+            padding: 0.5rem;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #66BB6A;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .content {
+            padding: 2rem;
+            background-color: #ffffff;
+            color: #333;
+            margin: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 2rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .gallery-item {
+            width: calc(33.333% - 1rem);
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #2E7D32;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            width: 100%;
+        }
+
+        @media (max-width: 960px) {
+            header, .content {
+                padding: 1rem;
+                text-align: center;
+            }
+            nav {
+                flex-direction: column;
+                padding: 0.5rem;
+            }
+            nav a {
+                margin: 0.5rem 0;
+                padding: 0.8rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .content {
+                margin: 1rem;
+                padding: 1rem;
+            }
+            .gallery-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://ecofuture-prima.eu/wp-content/uploads/2023/06/Ecofuture-logo-180x180-1.png" alt="EcoFuture Logo" class="logo"/>
+    <div class="header-content">
+        <h1>EcoFuture</h1>
+        <p class="slogan">The EcoFuture of Survival</p> <!-- Added slogan -->
+    </div>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
+
+<div class="content">
+    <h2>Welcome to EcoFuture</h2>
+    <p>EcoFuture is dedicated to promoting eco-friendly initiatives that help preserve our planet.</p>
+    <p>Welcome to EcoFuture! At EcoFuture, we are driven by the belief that a sustainable future is possible, and it starts with us. Our mission is to inspire, educate, and empower communities, businesses, and individuals to make environmentally responsible choices that lead to a healthier planet.</p>
+    <p>We offer innovative solutions and practical strategies to address the most pressing environmental challenges of our time. Whether you're passionate about renewable energy, waste reduction, sustainable agriculture, or green building, EcoFuture provides the tools and resources you need to make a difference.</p>
+    <p>Explore our initiatives, join our community, and discover how you can be part of the movement toward a brighter, greener future. Together, we can create a world where sustainability is not just an ideal but a way of life.</p>
+    <p><strong>Join Us</strong> in making a difference!</p> <!-- Added CTA for engagement -->
+</div>
+
+<div class="image-gallery">
+    <div class="gallery-item">
+        <img src="https://cdn.csswinner.com/images/winners/2023/dec/1896867562.jpg" alt="Eco-friendly initiative 1">
+    </div>
+    <div class="gallery-item">
+        <img src="https://www.ecofuture.rs/wp-content/uploads/2021/11/Earth.jpg" alt="Eco-friendly initiative 2">
+    </div>
+    <div class="gallery-item">
+        <img src="https://i1.wp.com/www.lifeadvancer.com/wp-content/uploads/2018/08/Eco-Friendly-Technologies.jpg?fit=850%2C458&ssl=1" alt="Eco-friendly initiative 3">
+    </div>
+    <!-- Add more gallery items as needed -->
+</div>
+
+<footer>
+    <p>EcoFuture &copy; 2024. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
